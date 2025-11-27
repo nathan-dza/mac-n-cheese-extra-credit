@@ -1,16 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport">
-    <title>The BEST Mac n' Cheese Recipe!</title>
+    <title>The BEST Mac n' Cheese Recipe of ALL Time</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>The <i>BEST</i> Mac n' Cheese Recipe</h1>
-    </header>
-    <h2>Info</h2>
-    <p> <img src="" alt=""></p>
+    <main>
+        <header>
+            <p id="ingredients-button">Ingredients</p>
+            <img src="pics/machero.png" id="hero">
+            <h1>The <i>BEST</i> Mac n' Cheese Recipe</h1>
+        </header>
+
+        <!-- all the basic info of the recipe -->
+        <div class="info">
+            <h2>Info</h2>
+            <ul>
+                <li>
+                    <!--Giving them all classes so i can easily put images on them later-->
+                    <p class="time">1 hour</p>
+                </li>
+                <li>
+                    <p class="serv"> 12 servings</p>
+                </li>
+                <li>
+                    <p class="cal">642 kcal</p>
+                </li>
+            </ul>
+        </div>
+
+        <!--nutrition stuff-->
+        <div class="nutrition">
+            <h2>Nutrition Facts (per serving)</h2>
+            <ul>
+                <li>Calories: 642 kcal</li>
+                <li>Protein: 26g</li>
+                <li>Carbohydrates: 40g</li>
+                <li>Fat: 41g</li>
+                <li>Saturated Fat: 24g</li>
+                <li>Cholesterol: 125mg</li>
+                <li>Potassium: 256mg</li>
+                <li>Fiber: 2g</li>
+                <li>Sugar: 6g</li>
+            </ul>
+        </div>
+        <!-- ingredients list -->
+        <div class="ingredients" id="ingredients-popup">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>16 oz elbow macaroni</li>
+                <li>1 tbsp extra virgin olive oil</li>
+                <li>6 tbsp unsalted butter</li>
+                <li>1/3 cup all-purpose flour</li>
+                <li>3 cups whole milk</li>
+                <li>1 cup heavy whipping cream</li>
+                <li>4 cups sharp cheddar cheese, shredded</li>
+                <li>2 cups gruyere cheese, shredded</li>
+                <li>Salt and pepper to taste</li>
+                <li>1/4 tsp smoked paprika</li>
+                <li>1/2 cup Parmesan cheese, shredded</li>
+                <li>4 tbsp melted butter</li>
+            </ul>
+        </div>
+        <!-- step by step instructions -->
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Prep: Preheat the oven to 350°F. Lightly grease a 3-4 qt baking dish.</li>
+                <li>Pasta: Cook the pasta one minute shy of al dente, drain it, and toss with a little olive oil. Set
+                    aside to cool.</li>
+                <li>Sauce: Melt the butter in a large pot, then whisk in the flour for 1 minute until bubbly. Slowly
+                    whisk in the milk and cream until smooth. Cook for about 2 minutes once it starts bubbling. Stir in
+                    salt and pepper.</li>
+                <li>Cheese: Remove from heat. Add 4 cups of shredded cheese (in two separate additions), whisking until
+                    the sauce is thick and creamy.</li>
+                <li>
+                    Assemble & Bake: Stir the cooled pasta into the sauce until coated. Pour half into the dish. Top
+                    with the remaining 2 cups of shredded cheese, then add the rest of the mac and cheese. Bake for
+                    about 30 minutes until golden brown and bubbly. Serve right away!</li>
+            </ol>
+        </div>
+    </main>
 </body>
+
 </html>
