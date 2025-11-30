@@ -233,7 +233,7 @@ html.dark-mode #hero, html.dark-mode #turkeyPic {
 }
 
 /* media queries for mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
     body{
         font-size: 35px;
     }
