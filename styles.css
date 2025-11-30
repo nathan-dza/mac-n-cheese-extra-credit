@@ -14,6 +14,7 @@ body{
     border-radius: 10px;
     padding: 20px;
     max-width: 800px;
+    font-size: 25px;
 }
 
 h2, h1{
@@ -30,6 +31,8 @@ h2, h1{
     font-size: 25px;
 }
 
+
+/*buttons*/
 #other-recipes-button{
     border: 2px solid #522300;
     border-radius: 10px;
@@ -48,6 +51,8 @@ h2, h1{
     font-size: 25px;
 }
 
+
+/*button hover*/
 #ingredients-button:hover, #other-recipes-button:hover, #dark-mode-button:hover{
     background-color: #FFDAA5;
     cursor: pointer;
@@ -67,10 +72,12 @@ h2, h1{
     border: 2px solid #522300;
     border-radius: 10px;
     padding: 20px;
-    width: 65%;
+    min-width: 800px;
     font-size: 25px;
+    max-height: 80vh;
 }
 
+/*other popup list styles*/
 #other-recipes-popup ul{
     list-style-type: none;
     padding: 0;
@@ -94,10 +101,14 @@ u{
     color: #522300;
 }
 
+
+/*hover for the close part on the popups*/
 u:hover{
     color: #FFAA00;
 }
 
+
+/*header settings*/
 header {
     display: flex;
     flex-direction: column;
@@ -106,6 +117,8 @@ header {
     gap: 15px;
 }
 
+
+/*mac n cheese hero settings*/
 #hero {
     width: 100%;
     max-width: 600px;
@@ -113,6 +126,7 @@ header {
     border: 2px solid #522300;
 }
 
+/*settings for pic of the turkey in other recipes*/
 #turkeyPic {
     width: 100%;
     height: auto;
@@ -151,49 +165,87 @@ html.dark-mode {
     background-image: url("pics/darkMacBG.png");
 }
 
+
+/*dark mode body*/
 html.dark-mode body {
     background-color: rgba(30, 15, 5, 0.75);
     color: #FFF5E6;
     border-color: #FFF5E6;
 }
 
+/*dark mode titles*/
 html.dark-mode h1, html.dark-mode h2, html.dark-mode u {
     color: #FFF5E6;
 }
 
+/*dark mode popups*/
 html.dark-mode #ingredients-popup, html.dark-mode #other-recipes-popup {
     background-color: #2A1505;
     border-color: #FFF5E6;
     color: #FFF5E6;
 }
 
+/*dark mode buttons*/
 html.dark-mode #ingredients-button, html.dark-mode #other-recipes-button, html.dark-mode #dark-mode-button {
     border-color: #FFF5E6;
 }
 
+/*dark mode hovers*/
 html.dark-mode #ingredients-button:hover, html.dark-mode #other-recipes-button:hover, html.dark-mode #dark-mode-button:hover {
     background-color: #522300;
     color: #FFF5E6;
 }
 
+
+/*dark mode pics*/
 html.dark-mode #hero, html.dark-mode #turkeyPic {
     border-color: #FFF5E6;
 }
-/*media queries 💔*/
+/* media queries 💔💔 */
+
+/* media queries for tablet / laptop */
 @media screen and (max-width: 900px) {
     body {
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    #ingredients-button, #other-recipes-button, #dark-mode-button {
-        width: 120px;
-        padding: 15px;
-        font-size: 20px;
+        max-width: 90%;
     }
 
     #ingredients-popup, #other-recipes-popup {
-        width: 90%;
+        min-width: auto;
+        width: 80%;
+    }
+}
+
+/* media queries for tablet*/
+@media screen and (max-width: 700px) {
+    #ingredients-button, #other-recipes-button, #dark-mode-button {
+        width: auto;
+        padding: 10px 15px;
+        font-size: 18px;
+        flex: 1; 
+    }
+
+    body {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+/* media queries for mobile */
+@media screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #ingredients-button, #other-recipes-button {
+        margin-bottom: -10px;
+    }
+
+    #ingredients-popup ul {
+        max-height: none; 
     }
     
+    #ingredients-popup, #other-recipes-popup {
+        width: 90%;
+    }
 }
