@@ -207,7 +207,8 @@ html.dark-mode #hero, html.dark-mode #turkeyPic {
 /* media queries for tablet / laptop */
 @media screen and (max-width: 900px) {
     body {
-        max-width: 90%;
+        max-width: 75%;
+        font-size: 25px;
     }
 
     #ingredients-popup, #other-recipes-popup {
@@ -225,6 +226,7 @@ html.dark-mode #hero, html.dark-mode #turkeyPic {
     }
 
     body {
+        max-width: 500px;
         font-size: 20px;
         padding: 22px;
     }
@@ -232,12 +234,18 @@ html.dark-mode #hero, html.dark-mode #turkeyPic {
 
 /* media queries for mobile */
 @media screen and (max-width: 500px) {
+    body{
+        font-size: 35px;
+    }
+
     nav {
         flex-direction: column;
         width: 100%;
     }
 
-    #ingredients-button, #other-recipes-button {
+    #ingredients-button, #other-recipes-button, #dark-mode-button {
+        align-self: center;
+        width: 80%;
         margin-bottom: -10px;
     }
 
