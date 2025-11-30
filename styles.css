@@ -1,5 +1,6 @@
 /*settings for the root of the website*/
 :root{
+    font-family: 'Sour Gummy', cursive;
     background-image: url("pics/macBG.png");
     background-size: cover;
     background-attachment: fixed;
@@ -25,8 +26,8 @@ h2, h1{
 #ingredients-button{
     border: 2px solid #522300;
     border-radius: 10px;
-    width: 150px;
-    padding: 20px;
+    width: 175px;
+    padding: 15px;
     text-align: center;
     font-size: 25px;
 }
@@ -36,8 +37,8 @@ h2, h1{
 #other-recipes-button{
     border: 2px solid #522300;
     border-radius: 10px;
-    width: 150px;
-    padding: 20px;
+    width: 175px;
+    padding: 15px;
     text-align: center;
     font-size: 25px;
 }
@@ -45,8 +46,8 @@ h2, h1{
 #dark-mode-button{
     border: 2px solid #522300;
     border-radius: 10px;
-    width: 150px;
-    padding: 20px;
+    width: 175px;
+    padding: 15px;
     text-align: center;
     font-size: 25px;
 }
@@ -218,15 +219,14 @@ html.dark-mode #hero, html.dark-mode #turkeyPic {
 /* media queries for tablet*/
 @media screen and (max-width: 700px) {
     #ingredients-button, #other-recipes-button, #dark-mode-button {
-        width: auto;
+        width: 200px;
         padding: 10px 15px;
         font-size: 18px;
-        flex: 1; 
     }
 
     body {
         font-size: 20px;
-        padding: 15px;
+        padding: 22px;
     }
 }
 
